@@ -1,0 +1,109 @@
+.wrap {
+    background-color: #eee;
+    padding-bottom: 130px;
+}
+
+.web_sub {
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 140px;
+    text-align: center;
+}
+
+.web_sub .title {
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 42px;
+    align-items: center;
+    position: relative;
+}
+
+.web_sub .title h2 {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.web_sub .title .btn {
+    position: absolute;
+    top: 0;
+    right: 220px;
+    background-color: #333;
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.web_sub .title .btn span {
+    padding-left: 16px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.web_sub .link {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    color: #333;
+}
+
+.web_sub .link a {
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.web_sub .contents {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.web_sub .contents img {
+    width: 420px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.25);
+    border-radius: 5px;
+}
+
+.web_sub .contents .center img:nth-child(2) {
+    margin-top: 24px;
+}
+
+.comments {
+    margin-top: 80px;
+    padding: 30px 0;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.comment {
+    padding: 30px 0;
+}
+
+.comment h4 {
+    font-size: 19px;
+    font-weight: 500;
+    display: block;
+    align-items: center;
+}
+
+.comment h4 span {
+    color: #ccc;
+    align-items: center;
+    line-height: 17px;
+    padding-right: 4px;
+}
+
+.textbox {
+    border: 2px solid #fff;
+    padding-top: 10px;
+}
+
+.comment p {
+    font-size: 16px;
+}
