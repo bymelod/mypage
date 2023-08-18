@@ -27,12 +27,12 @@
                     </div>
                     
                     <div class="item">
-                        <a href=""><img src="../images/il-thum01.jpg" alt=""><p>2017 부산시 소식지 표지</p></a>
-                        <a href=""><img src="../images/il-thum02.jpg" alt=""><p>2017 부산시 소식지 표지</p></a>
-                        <a href=""><img src="../images/il-thum03.jpg" alt=""><p>2017 부산시 소식지 표지</p></a>
-                        <a href=""><img src="../images/il-thum03-1.jpg" alt=""><p>2017 부산시 소식지 표지</p></a>
-                        <a href=""><img src="../images/il-thum04.jpg" alt=""><p>2017 부산시 소식지 표지</p></a>
-                        <a href=""><img src="../images/il-thum05.jpg" alt=""><p>2017 부산시 소식지 표지</p></a>
+                        <li><img src="../images/il-thum01.jpg" data-img="../images/il-01.jpg"></li>
+                        <li><img src="../images/il-thum02.jpg" data-img="../images/il-02.jpg"></li>
+                        <li><img src="../images/il-thum03.jpg" data-img="../images/il-03.jpg"></li>
+                        <li><img src="../images/il-thum03-1.jpg" data-img="../images/il-04.jpg"></li>
+                        <li><img src="../images/il-thum04.jpg" data-img="../images/il-05.jpg"></li>
+                        <li><img src="../images/il-thum05.jpg" data-img="../images/il-06.jpg"></li>
                     </div>
                     
                 </div>
@@ -42,8 +42,8 @@
                         <h3><span>●</span>2018 부산시 소식지 표지<br><b>포토샵 브러쉬툴로 드로잉 및 채색</b></h3> 
                     </div>
                     <div class="item">
-                        <a href=""><img src="../images/il-thum06.jpg" alt=""><p>2018 부산시 소식지 표지</p></a>
-                        <a href=""><img src="../images/il-thum07.jpg" alt=""><p>2018 부산시 소식지 표지</p></a> 
+                        <li><img src="../images/il-thum06.jpg" data-img="../images/il-07.jpg"></li>
+                        <li><img src="../images/il-thum07.jpg" data-img="../images/il-08.jpg"></li>
                     </div>
                 </div>
                 
@@ -52,9 +52,9 @@
                         <h3><span>●</span>2017 부경양돈 소식지 표지<br><b>일러스트레이터 펜툴로 작업</b></h3> 
                     </div>
                     <div class="item">
-                        <a href=""><img src="../images/il-thum08.jpg" alt=""><p>2017 부경양돈 소식지 표지</p></a>
-                        <a href=""><img src="../images/il-thum09.jpg" alt=""><p>2017 부경양돈 소식지 표지</p></a>
-                        <a href=""><img src="../images/il-thum10.jpg" alt=""><p>2017 부경양돈 소식지 표지</p></a> 
+                        <li><img src="../images/il-thum08.jpg" data-img="../images/il-10.jpg"></li>
+                        <li><img src="../images/il-thum09.jpg" data-img="../images/il-11.jpg"></li>
+                        <li><img src="../images/il-thum10.jpg" data-img="../images/il-12.jpg"></li>
                     </div>
                 </div>
 
@@ -63,9 +63,8 @@
                         <h3><span>●</span>2018 금정구청 쇼핑백 일러스트<br><b>포토샵 브러쉬툴로 드로잉 및 채색</b></h3> 
                     </div>
                     <div class="item">
-                        <a href=""><img src="../images/il-thum11.jpg" alt=""><p>2018 금정구청 쇼핑백</p></a>
-                        <a href=""><img src="../images/il-thum12.jpg" alt=""><p>2018 금정구청 쇼핑백</p></a> 
-                    </div>
+                        <li><img src="../images/il-thum11.jpg" data-img="../images/il-13.jpg"></li>
+                        <li><img src="../images/il-thum12.jpg" data-img="../images/il-14.jpg"></li>
                 </div>
 
                 <div class="content">
@@ -73,7 +72,7 @@
                         <h3><span>●</span>2018 부산관광공사 온천관광 지도 일러스트<br><b>포토샵 브러쉬툴로 작업</b></h3> 
                     </div>
                     <div class="item">
-                        <a href=""><img src="../images/il-thum13.jpg" alt=""><p>2017 부산온천관광 지도</p></a>
+                        <li><img src="../images/il-thum13.jpg" data-img="../images/il-15.jpg"></li>
                     </div>
                 </div>
             </div>
@@ -82,5 +81,21 @@
     
     <a href="#x" class="go_top">TOP</a>
 
+    <div class="dimm">
+        <img src="" alt="">
+    </div>
+
+
+    <script>
+        $('.item li').click(function () {
+            let dataImg = $(this).find('img').attr('data-img')
+            $('.dimm').addClass('show').find('img').attr('src', dataImg)
+
+            $('.dimm').click(function () {
+                $(this).removeClass('show')
+            })
+        })
+    </script>
+</body>
 </body>
 </html>

@@ -23,7 +23,6 @@ body {
     background-color: #fff;
 }
 
-
 .header {
     height: 80px;
     line-height: 80px;
@@ -39,8 +38,9 @@ body {
 }
 
 .header .name {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 23px;
+    font-weight: 600;
+    color: #333;
     letter-spacing: 3px;
 }
 
